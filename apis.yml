@@ -1,7 +1,24 @@
 aid: planetary
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/planetary.png
 name: Planetary
-description: Planetary is a company surfaced as a portfolio company of bloomberg-beta and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Planetary is a decentralized, peer-to-peer social networking company built on the Secure
+  Scuttlebutt (SSB) protocol, offering an iOS app for algorithm-free social media where users own and
+  store their data locally with no advertising and no data selling. The team has since migrated its
+  design, app, and philosophy to the Nostr protocol under a new app, nos.social. The project is fully
+  open source, developed in the open on GitHub, and is a portfolio company of Bloomberg Beta. Planetary
+  exposes no commercial REST/HTTP API; its developer surface is the underlying SSB/Nostr protocol
+  documentation (RPC methods, replication, blobs) rather than a hosted web API.
 url: https://raw.githubusercontent.com/api-evangelist/planetary/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,17 +26,45 @@ x-backed-by:
 - bloomberg-beta
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-notes: Decentralized social protocol app (SSB -> Nostr). No commercial REST API / OpenAPI / OAuth /
+  published client SDKs. Migrating to nos.social on the Nostr protocol.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Social
+- Social Media
+- Decentralized
+- Peer-to-Peer
+- Scuttlebutt
+- Nostr
+- Open Source
+- Protocol
+- iOS
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis: []
 common:
+- type: DomainSecurity
+  url: security/planetary-domain-security.yml
 - type: Website
   url: https://planetary.social/
+- type: DeveloperPortal
+  url: https://dev.planetary.social/
+- type: GitHubOrganization
+  url: https://github.com/planetary-social
+- type: Support
+  url: https://planetarysupport.zendesk.com/hc/en-us
+- type: PrivacyPolicy
+  url: https://planetarysupport.zendesk.com/hc/en-us/articles/360036147293-Privacy-Policy-October-28th-2019-
+- type: TermsOfService
+  url: https://planetarysupport.zendesk.com/hc/en-us/articles/360035642794-Terms-of-Service-Nov-4-2019-
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
