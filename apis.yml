@@ -28,7 +28,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 x-notes: Decentralized social protocol app (SSB -> Nostr). No commercial REST API / OpenAPI / OAuth /
   published client SDKs. Migrating to nos.social on the Nostr protocol.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
